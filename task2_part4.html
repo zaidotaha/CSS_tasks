@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #20bc9c;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width:80%;
+        max-width:450px;
+        position:relative;
+        top:100px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .font{
+        font-family: Arial;
+    }
+    .login{
+        font-size: 2em;
+        padding:1em;
+        padding-bottom: 0.3em;
+    }
+    #password, #email{
+        padding:1em;
+        width:70%;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        color: grey;
+        margin:5px;
+
+        border:none;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        padding-bottom: 15px;
+        outline: none;
+    }
+    #email{
+        margin-bottom: 2em;
+    }
+    #test{
+        width: 72%;
+        margin:auto;
+        text-align: left;
+        color:grey;
+    }
+    #show{
+        vertical-align: -2px;
+    }
+    .button{
+        margin: .6em auto;
+        display: block;
+        width: 72%;
+        padding: 0.4em;
+        font-size: 1.7em;
+        border-radius: 7px;
+        margin-top:2em;
+        margin-bottom:1em;
+        background-color: #20bc9c;
+        font-weight: bold;
+        border: 1px solid black;
+        color:white;
+    }
+    .forgot{
+        text-align: center;
+        margin-bottom:1em;
+        font-size: 1.1em;
+        color:rgb(110, 110, 110);
+    }
+    .color{
+        color:rgb(38, 130, 116);
+        text-decoration:none;
+    }
+</style>
+<body>
+    <div id="grad1"></div>
+    <div class="form">
+        <form>
+        <div class="font login">USER LOGIN</div>
+        <div id="test">
+            <label for="show" class="font" style="font-size:13px; color:#20bc9c;">Username</label>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" style="font-weight: bold; color:black;">
+        </div>
+        <div id="test">
+            <label for="show" class="font" style="font-size:13px; color:#20bc9c;">Password</label>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" style="font-weight: bold; color:black;">
+        </div>
+        
+        <div>
+            <button class="font button">LOGIN</button>
+        </div>
+        <div class="forgot font">
+            Forgot Password?      
+        </div>
+    </form>
+    </div>
+</body>
+</html>

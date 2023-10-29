@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #e3e3ff;
+    }
+    .font{
+        font-family:'Open Sans';
+    }
+    .login{
+        font-size: 2em;
+        padding:0.4em;
+        color: white;
+        font-weight: bolder;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width:80%;
+        max-width:350px;
+        position:relative;
+        top:100px;
+        text-align: center;
+        background-color: #9084c4;
+        border-radius: 20px;
+        box-shadow: -1px 2px 30px 0px #9084c4;
+        -webkit-box-shadow: -1px 2px 30px 0px #9084c4;
+        -moz-box-shadow: -1px 2px 30px 0px #9084c4;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        margin:10px auto;
+        text-align: center;
+    }
+    .normal-input{
+        width:95%;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        color: grey;
+        padding: 10px 5px;
+        margin:7px auto;
+    }
+    .name-input{
+        display:flex;
+        flex-direction: row;
+    }
+    #fname,#lname{
+        width:45%;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        color: grey;
+        padding: 10px 5px;
+        margin:7px auto;
+    }
+    .space{
+        flex:1;
+        min-width: 5px;
+    }
+    #terms-privacy{
+        font-size: 10px;
+        color:white;
+        margin: 18px auto;
+    }
+    #show{
+        vertical-align: -3px;
+    }
+    .button{
+        background-color: #908c84;
+        font-size: 1.2em;
+        color:rgb(119, 119, 119);
+        border: none;
+        border-radius: 20px;
+        width: 84%;
+        padding:0.2em;
+        margin-bottom:10px;
+    }
+    .account-haver,.color{
+        color:white;
+        font-size:12px;
+        margin-bottom: 20px;
+    }
+    .copyright{
+        color:white;
+        font-size:10px;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <div class="font login">Sign Up</div>
+        <div class="form">
+            <div class="name-input">
+                    <input type="text" id="fname" name="fname" value="First Name">
+                    <div class="space"></div>
+                    <input type="text" id="lname" name="lname" value="Last Name">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" value="Email" class="normal-input">
+            </div>
+            <div>
+                <input type="text" id="password" name="password" value="Password" class="normal-input">
+            </div>
+            <div>
+                <input type="text" id="Confirmpassword" name="Confirmpassword" value="Confirm Password" class="normal-input">
+            </div>
+
+            <div class="the-rest">
+                <div id="terms-privacy">
+                    <input type="checkbox" name="show" id="show">
+                    <label for="show" class="font"> I accept the Terms of Use & Privacy Policy</label>
+                </div>
+            </div>
+            <div>
+                <button class="font button">Sign Up</button>
+            </div>
+            <div class="account-haver font">
+                Already have an account? <a href="#" class="color">Login here</a>        
+            </div>
+            <div class="copyright font">
+                Copyright <i class="fa-regular fa-copyright"></i> YourCompany.com       
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #grad1{
+        background: rgb(149,218,171);
+        background: linear-gradient(45deg, rgba(149,218,171,1) 0%, rgba(48,182,162,1) 100%);
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        z-index: -1;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width:80%;
+        max-width:450px;
+        position:relative;
+        top:100px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+
+        box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.44);
+        -webkit-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.44);
+        -moz-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.44);
+    }
+
+    .align-left{
+        text-align: left;
+    }
+
+    .font{
+        font-family: Helvetica;
+    }
+    .login{
+        font-size: 2em;
+        padding:1em;
+        color:rgb(38, 130, 116);
+    }
+    #password, #email{
+        padding:1em;
+        width:70%;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        color: grey;
+        margin:5px;
+    }
+    #email{
+        margin-bottom: 2em;
+    }
+    #test{
+        width: 76%;
+        margin:auto;
+        text-align: left;
+        color:grey;
+    }
+    #show{
+        vertical-align: -2px;
+    }
+    .button{
+        margin: .6em auto;
+        display: block;
+        width: 30%;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 7px;
+        margin-top:2em;
+        margin-bottom:2em;
+        background-color: rgb(38, 130, 116);
+        color:white;
+        border: none;
+    }
+    .forgot{
+        text-align: center;
+        margin-bottom:1em;
+        font-size: 0.85em;
+    }
+    .color{
+        color:rgb(38, 130, 116);
+        text-decoration:none;
+    }
+</style>
+<body>
+    <div id="grad1"></div>
+    <div class="form">
+        <form>
+        <div class="font login">Login</div>
+        <div>
+            <input type="email" id="email" name="email" value="Email">
+        </div>
+        <div>
+            <input type="password" id="password" name="password" value="Password">
+        </div>
+        <div id="test">
+            <input type="checkbox" name="show" id="show">
+            <label for="show" class="font" style="font-size:13px;"> Show Password </label>
+        </div>
+        <div>
+            <button class="font button">SIGN IN</button>
+        </div>
+        <div class="forgot font">
+            Forgot <a href="#" class="color">Username</a> / <a href="#" class="color">Password</a>?
+        </div>
+        <div class="forgot font">
+            Don't have an account? <a href="#" class="color">Sign up</a>        
+        </div>
+    </form>
+    </div>
+</body>
+</html>

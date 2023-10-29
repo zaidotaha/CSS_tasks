@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--comment for next time I open this code: Try to put the entire form container inside a bigger flexbox with 
+row direction, center the elements (just 1 element) of the flexbox, in order to make it more responsive-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    #grad1{
+        background: rgb(149,218,171);
+        background: linear-gradient(90deg, #8300CD 0%, #B800C4 100%);
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        z-index: -1;
+    }
+    .font{
+        font-family:'Open Sans';
+    }
+    .login{
+        font-size: 1.4em;
+        padding:0.4em;
+        color: black;
+        font-weight: bolder;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:80%;
+        max-width:600px;
+        margin:auto;
+        position:relative;
+        top:10vh;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        margin:10px auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .item{
+        flex:1;
+    }
+    
+    .normal-input{
+        width:80%;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        color: grey;
+        padding: 10px 15px;
+        margin:7px auto;    
+        border-radius: 20px;
+        background-color: rgb(233, 233, 233);
+    }
+    .value{
+        position: absolute;
+        top:1.2em;left:2.9em;
+        font-size:.8em;
+        pointer-events: none; 
+        color:rgb(75, 75, 75);
+    }
+    .value-container{
+        position:relative;
+        margin:10px;
+    }
+    .value-container .normal-input:focus ~ .value{
+        display: none;
+    }
+    .button{
+        background-color: #20cc44;
+        font-size: .8em;
+        color:white;
+        border: none;
+        border-radius: 20px;
+        width: 84%;
+        padding:.7em;
+        margin:10px;
+        font-weight: bold;
+
+    }
+    .account-haver{
+        font-size: 11px;
+        margin:10px;
+        margin-bottom: 30px;
+    }
+    .color{
+        text-decoration: none;
+        color:#20cc44;
+        font-weight: bold;
+    }
+    .img-width{
+        width:150px;
+    }
+    @media only screen and (min-width: 768px) {
+        .form-container{
+            flex-direction: row;
+            top:25vh;
+        } 
+        .value{
+            left:2.2em;
+        }
+        .login{
+            margin-top: 30px;
+        }
+        .img-center{
+            padding: 10px 0;
+        }
+        .img-width{
+            width:200px;
+        }
+    }
+    .img-center{
+        position: relative; margin: auto; text-align: center; padding-top:20px;
+    }
+    .create{
+        text-decoration: none;
+        color:#20cc44;
+        font-weight: bold;
+        font-size:10px;
+    }
+</style>
+<body>
+    <div id="grad1"></div>
+    <div class="form-container">
+
+
+        <div class="font item img-center">
+            <img src="laptop.png" class="img-width">
+        </div>
+
+
+        <div class="form item">
+            <div class="font login">Member Login</div>
+            <div class="value-container">
+                <input type="email" id="email" name="email" class="normal-input">
+                <div class="value font"><i class="fa-regular fa-envelope" style="color: #6b6b6b; vertical-align: -1px; margin-right:1em;"></i>Email</div>
+            </div>
+            <div class="value-container">
+                <input type="password" id="password" name="password" class="normal-input">
+                <div class="value font"><i class="fa-solid fa-lock" style="color: #6b6b6b; vertical-align: -1px; margin-right:1em;"></i>Password</div>
+            </div>
+
+            <div>
+                <button class="font button">LOGIN</button>
+            </div>
+
+            <div class="account-haver font">
+                Forgot <a href="#" class="color">Username</a> / <a href="#" class="color">Password ?</a>       
+            </div>
+            <div class="font">
+                <a href="#" class="create">Create your account <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

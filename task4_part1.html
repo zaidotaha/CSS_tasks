@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container-1{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0px;
+            left:0px;
+            background-color: #DAA06D;
+        }
+        .brown-header{
+            height:20%;
+            min-height: 70px;
+            background-color: #7B3F00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding: 0;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:rgb(1, 100, 1);
+            font-family:'Times New Roman', Times, serif;
+            font-size: 1em;
+        }
+        .p-heading{
+            font-weight: bold; font-size: 3em; margin:0;
+        }
+        @media only screen and (max-width: 768px) {
+            .brown-header{
+                font-size:2em;
+            }
+            .navbar li{
+                font-size:.85em;
+            }
+            .p-heading{
+                font-size: 2.5em;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            .brown-header{
+                font-size:1.5em;
+            }
+            .navbar li{
+                font-size:0.7em;
+            }
+            .p-heading{
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="brown-header">
+            <p>THIS IS MY BANNER TEXT</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">INFO</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">HUBPAGES</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p class="p-heading">Lorem Ipsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet nulla aliquet, dignissim augue sed, efficitur urna. Fusce cursus arcu eget justo laoreet viverra. Phasellus vel fermentum ex, nec commodo mi. Vivamus mi diam, accumsan vel vulputate id, iaculis vel nulla. Nullam ipsum orci, commodo non nulla et, fringilla suscipit orci. In sodales molestie nibh, ac tincidunt enim sodales in. Maecenas et eros eget mauris pharetra laoreet nec ac mauris. Morbi urna mi, facilisis eu mattis in, molestie ac lorem. Nulla eget volutpat ante, nec faucibus orci. Morbi tristique orci eu interdum ultrices. <i class="fa-regular fa-copyright"></i></p>
+        </div>
+    </div>
+</body>
+</html>

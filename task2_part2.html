@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    }
+
+    .navbar {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    width:80%;
+    margin:auto;
+    margin:15px auto;
+    padding: 5px 0;
+    position:relative;
+    }
+
+    .space{
+        flex:1;
+    }
+
+    .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    }
+
+    .navbar li {
+    margin: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    }
+
+    .navbar a {
+    text-decoration: none;
+    color: black;
+    }
+
+    .logo{
+        font-size: 2em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color:rgb(99, 96, 96);
+        margin: 0.15em;
+    }
+
+    .grey-font{
+        color: grey;
+    }
+    @media only screen and (max-width: 480px) {
+        .navbar{
+            flex-direction:column;
+            justify-content: center;
+            align-items: center; 
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        max-width: 320px;
+        margin:auto;
+        margin-top: 5%;
+        text-align: center;
+        font-size:0.8em;
+    }
+
+    .font{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .simple-margin{
+        margin:0.8em 0.5em;
+    }
+    #email-container, #password-container{
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    #email, #password{
+        width:95%;
+        text-align: left;
+        height:2em;
+    }
+
+    .button{
+        margin: .6em auto;
+        display: block;
+        width: 95%;
+        padding: 10px;
+        font-size: 1.2em;
+        border-radius: 7px;
+        background-color: #63AAFF;
+        color:white;
+        border: none;
+    }
+    .margin2{
+        margin: 0.5em 4%;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Scratch
+        </div>
+        <div class="space"></div>
+        <div class="test">
+            <ul>
+            <li><a href="#"><span class="grey-font">Signup</span></a></li>
+            <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form">
+        <form>
+            <div class="font margin2" id="email-container">Email</div>
+            <div class="simple-margin">
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="font margin2" id="password-container">Password</div>
+            <div class="simple-margin">
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <button class="font button">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

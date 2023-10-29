@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Noto Sans Hanunoo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+body {
+    
+    min-height: 100vh; /* Set body height to 100% of the viewport height */
+    margin: 0; /* Remove default body margin */
+    
+}
+
+.img2{
+    position: relative;
+    top: 0;
+    left: 20px;
+    width: 120px;
+}
+.img-container{
+    width: 100%;
+}
+.center-div {
+    
+    width: 50%; /* Set width to 50% of the body's width */
+    max-width: 320px; /* Optionally, set a maximum width for the div */
+    height:auto;
+    /*text-align: center; /* Center the content inside the div */
+    padding: 18px; /* Add padding for better visibility */
+    padding-bottom: 20px;
+    margin-bottom:0px;
+    border: 1px solid white;
+    border-radius: 10px; 
+    box-shadow: 0px 2px 18px -2px rgba(99,93,93,0.26);
+    -webkit-box-shadow: 0px 2px 18px -2px rgba(99,93,93,0.26);
+    -moz-box-shadow: 0px 2px 18px -2px rgba(99,93,93,0.26);
+}
+.center-dev2{
+    width:100%;
+    margin-top: 4vh;
+    position: relative;
+    text-align: center;
+    font-family: 'Noto Sans Hanunoo';
+    font-size:0.75em;
+}
+.center-dev3{
+    position: relative;
+    text-align: center;
+    padding-top: 8%;
+    font-family: 'Noto Sans Hanunoo';    
+}
+.blue{
+    color:#0A66C2;
+    font-weight: bold;
+    display: inline;
+}
+#header_sign_in{
+    display:inline-block;
+    font-family: 'Noto Sans Hanunoo';
+    font-weight:600;
+    font-size: 27px;
+    text-align:left;   
+    padding-bottom: 5px;
+}
+#text_under_header{
+    font-family: 'Noto Sans Hanunoo';
+    font-size: small;
+}
+.container{
+    text-align: center;
+    position: relative;
+    margin-bottom: 0.85em;
+}
+.container2{
+    margin-bottom: 1.5em;
+}
+#email, #password{
+    width:100%;
+    padding-top: 25px;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    border-radius: 5px; 
+    font-size: large;
+    border: 2px solid rgb(164, 164, 164);
+    transition: all 0.02s ease;
+}
+.container3{
+    
+    position: relative;
+    text-align:center;
+    width:100%;
+    font-weight: bold;
+}
+.text_over{
+    font-family: 'Noto Sans Hanunoo';
+    position:absolute;
+    top:0.85em;
+    left:7%;
+    color:rgba(60, 59, 59, 0.785);
+    pointer-events: none; 
+    transition: all 0.5s ease;
+
+}
+
+.container .input_field:focus ~ .text_over{
+    font-size: 12px;
+    top: 0.3em;
+}
+
+.container .input_field:focus{
+    border: 2.5px solid #0A66C2 !important;
+    outline: none;
+}
+hr {
+  border: none;
+  border-top: 1px solid lightgray;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  
+}
+
+hr:after {
+  background: #fff;
+  font-family: 'Noto Sans Hanunoo';
+  font-size:14px;
+  color:rgb(102, 101, 101);
+  content: 'or';
+  padding: 0 4px;
+  position: relative;
+  top: -11px;
+}
+
+.button{
+    width:90%;
+    padding:13px;
+    border-radius: 20px; 
+    font-size: 14px;
+    color:white;
+    font-weight: bold;
+    font-family:'Noto Sans Hanunoo';
+    background-color: #0a66c2;
+    border: none;
+}
+
+.button2{
+    width:90%;
+    padding:10px;
+    border-radius: 20px; 
+    font-size: 13px;
+    color:Black;
+    font-weight: unset;
+    font-family:'Noto Sans Hanunoo';
+    background-color: white;
+    border: 1px solid black;
+    margin-top:9px;
+}
+
+.button3{
+    width:90%;
+    padding:10px;
+    border-radius: 20px; 
+    font-size: 13px;
+    color:Black;
+    font-weight: unset;
+    font-family:'Noto Sans Hanunoo';
+    background-color: white;
+    border: 1px solid black;
+    margin-top:9px;
+}
+
+#forgot{
+    color:#0a66c2;
+    font-family: 'Noto Sans Hanunoo';
+    font-weight: bold;
+    width: 90%;
+    padding-left: 5px;
+    font-size: 14px;
+    position:absolute;
+    left:2%;
+}
+#big{
+    position: relative;
+}
+a{
+    color:#0A66C2;
+}
+.img1{
+    width:15px;
+    height:15px;
+    padding-right: 3px;
+    vertical-align: -3px;
+}
+.bigger-icon{
+    font-size:20px;
+    color:black;
+    vertical-align: -2px;
+    padding-right: 3px;
+}
+.grey-font{
+    color:rgb(123, 123, 123);
+    font-weight: bold;
+}
+.button4{
+    position:absolute;
+    right:-2%;
+    top:30%;
+    font-family: 'Noto Sans Hanunoo';
+    color:#0a66c2;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em    ;
+}
+.flexbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-list {
+  list-style-type: none; /* Remove default list styling */
+  display: flex; /* Use flexbox layout */
+}
+ul {
+    padding-left: 0; /* Remove the left padding of the unordered list */
+}
+
+ul li {
+    margin: 0 9px;
+    font-size:10px;
+    font-weight: bold;
+    color: darkgray;
+    white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+        .img-container{
+            text-align: center;
+        }
+        .img2{
+            position: relative;
+            vertical-align: center;
+            left: auto;
+        }
+        .center-div{
+            max-width: 1000px;
+        }
+        .center-dev3{
+            display: none;
+        }
+        }
+@media only screen and (max-width:480px){
+        .center-div{
+            width:70%;
+        }
+        
+}
+    </style>
+    
+</head>
+<body>
+    
+    <div class="img-container">
+        <img src="linkedin.jpg" class="img2">
+    </div>
+    <div class="flexbox">
+        <div class="center-div">
+            
+            <div ID="header_sign_in">Sign in</div>
+            <div ID="text_under_header">Stay updated on your professional world</div> 
+            <br>
+            <form>
+                <div class="container container2">
+                    <input type="text" id="email" name="email" class="input_field">
+                    <div class="text_over">Email or Phone</div>
+                </div>
+
+                <div class="container">
+                    <input type="password" id="password" name="password" class="input_field">
+                    <div class="text_over">Password</div>
+                    <button class="button4">show</button>
+                </div>
+                
+                <div id="big">
+                    <div id="forgot"><a href="about:blank">Forgot Password?</a></div>
+                </div> <br><br>
+                <div class="container3">
+                    <input type="submit" value="Sign in" class="button">
+                </div>
+                <br>
+                <hr>
+                <div class="container3">
+                    <button class="button2" id="button2">
+                        <span><img src="google.png" class="img1"> Continue with Google</span>
+                    </button>
+                </div>
+                <div class="container3">
+                    <button class="button3" id="button3">
+                        <span class="grey-font"><i class="fa-brands fa-apple bigger-icon"></i> Sign in with Apple</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="center-dev2">
+            <span>New to linkedin? <div class="blue">Join now</div></span>
+        </div>
+
+        <div class="center-dev3" style="margin-bottom: 5px;">
+                <ul class="horizontal-list">
+                    <li><img src="linkedinBW.png" width=60px> <i class="fa-regular fa-copyright" style="font-size: 10px; vertical-align: 3px; margin-right: 10px;"></i></li>
+                    <li style="margin:0;margin-left:-12px;">2023</li>
+                    <li>User Agreement</li>
+                    <li>Privacy Policy</li>
+                    <li>Community Guidelines</li>
+                    <li>Cookies Policy</li>
+                    <li>Copyright policy</li>
+                    <li>Send Feedback</li>
+                    <li>
+                        <span style="margin-right: 20px;">
+                            Language
+                                <i class="fa fa-angle-down lg"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+        
+</body>
+</html>

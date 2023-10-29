@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    left: 20px;
+}
+
+.container:hover .text {
+    font-size: 16px;
+    top: 10px;
+}
